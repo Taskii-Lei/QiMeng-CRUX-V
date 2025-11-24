@@ -1,0 +1,5 @@
+module JC_counter (
+    input wire clk,          // 时钟信号
+    input wire rst_n,        // 复位信号，低电平有效
+    output reg [7:0] count   // 8 位计数输出
+);

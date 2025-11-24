@@ -1,0 +1,6 @@
+module clkgenerator (
+    input wire rst,          // Reset signal
+    input wire clk_in,       // Input clock signal
+    input wire [3:0] div,    // Divide factor for the clock
+    output wire clk           // Output clock signal
+);

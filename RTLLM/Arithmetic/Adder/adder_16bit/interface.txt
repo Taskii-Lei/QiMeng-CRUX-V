@@ -1,0 +1,7 @@
+module adder_16bit (
+    input  [15:0] a,  // 16-bit input operand A
+    input  [15:0] b,  // 16-bit input operand B
+    input          Cin, // Carry-in input
+    output [15:0] y,  // 16-bit output representing the sum of A and B
+    output         Co  // Carry-out output
+);

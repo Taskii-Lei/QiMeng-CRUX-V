@@ -1,0 +1,4 @@
+module ring_counter (
+    input wire clk,      // Clock signal that drives the state transitions of the ring counter.
+    input wire reset     // Reset signal to initialize the counter to its starting state.
+);

@@ -1,0 +1,8 @@
+module serial2parallel (
+    input wire clk,          // Clock signal
+    input wire rst_n,        // Reset signal (active low)
+    input wire din_serial,   // Serial input data
+    input wire din_valid,    // Validity signal for input data
+    output reg [7:0] dout_parallel,  // Parallel output data (8 bits wide)
+    output reg dout_valid      // Validity signal for the output data
+);

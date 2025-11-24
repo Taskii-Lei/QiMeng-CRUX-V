@@ -1,0 +1,7 @@
+module freq_div (
+    input wire CLK_in,  // Input clock signal
+    input wire RST,     // Reset signal
+    output reg CLK_50,  // Output clock signal with a frequency of CLK_in divided by 2
+    output reg CLK_10,  // Output clock signal with a frequency of CLK_in divided by 10
+    output reg CLK_1    // Output clock signal with a frequency of CLK_in divided by 100
+);

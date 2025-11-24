@@ -1,0 +1,8 @@
+module multi_booth_8bit (
+    input wire clk,          // Clock signal for synchronous operation
+    input wire reset,        // Reset signal to initialize the multiplier module
+    input wire [7:0] a,      // 8-bit input representing the multiplicand
+    input wire [7:0] b,      // 8-bit input representing the multiplier
+    output reg [15:0] p,    // 16-bit output representing the product of the multiplication
+    output reg rdy          // Ready signal indicating the completion of the multiplication operation
+);

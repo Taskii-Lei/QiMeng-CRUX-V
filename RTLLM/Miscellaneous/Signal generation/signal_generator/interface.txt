@@ -1,0 +1,5 @@
+module signal_generator (
+    input wire clk,        // Clock signal used for synchronous operation
+    input wire rst_n,      // Active-low reset signal. Defined as 0 for reset and 1 for reset signal inactive
+    output reg [4:0] wave  // 5-bit output waveform signal representing the generated waveform
+);

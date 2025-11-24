@@ -1,0 +1,6 @@
+module div_16bit (
+    input [15:0] A,  // 16-bit dividend
+    input [7:0] B,   // 8-bit divisor
+    output reg [15:0] result,  // 16-bit quotient
+    output reg [15:0] odd   // 16-bit remainder
+);

@@ -1,0 +1,5 @@
+module freq_divbyodd (
+    input wire clk,       // Input clock signal
+    input wire rst_n,     // Active low reset signal
+    output reg clk_div    // Divided clock output
+);

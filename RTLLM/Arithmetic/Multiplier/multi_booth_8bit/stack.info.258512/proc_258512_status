@@ -1,0 +1,48 @@
+Name:	vcselab
+Umask:	0022
+State:	S (sleeping)
+Tgid:	258512
+Ngid:	0
+Pid:	258512
+PPid:	245546
+TracerPid:	0
+Uid:	6155	6155	6155	6155
+Gid:	10000	10000	10000	10000
+FDSize:	256
+Groups:	10000 20002 
+VmPeak:	  172144 kB
+VmSize:	  172144 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   44156 kB
+VmRSS:	   44156 kB
+RssAnon:	   29184 kB
+RssFile:	   14972 kB
+RssShmem:	       0 kB
+VmData:	   39056 kB
+VmStk:	     136 kB
+VmExe:	   42116 kB
+VmLib:	   14028 kB
+VmPTE:	     332 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	7/6184267
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000010002
+SigIgn:	0000000000001006
+SigCgt:	00000001c00a66e9
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000001fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff
+Cpus_allowed_list:	0-367
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000f
+Mems_allowed_list:	0-3
+voluntary_ctxt_switches:	181
+nonvoluntary_ctxt_switches:	150

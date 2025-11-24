@@ -1,0 +1,5 @@
+module square_wave (
+    input wire clk,  // Clock signal that drives the module.
+    input wire [7:0] freq,  // Frequency control, specifying how often the square wave toggles.
+    output reg wave_out  // Square wave output signal.
+);

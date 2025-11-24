@@ -1,0 +1,9 @@
+module instr_reg (
+    input wire clk,          // Clock signal for synchronization
+    input wire rst,          // Active low reset signal to initialize the register
+    input wire [1:0] fetch,  // Control signal indicating the source of the instruction
+    input wire [7:0] data,   // 8-bit data input representing the instruction to be fetched
+    output reg [2:0] ins,    // High 3 bits of the instruction, indicating the opcode or operation
+    output reg [4:0] ad1,    // Low 5 bits of the instruction, representing the register address
+    output reg [7:0] ad2     // The full 8-bit data from the second source
+);

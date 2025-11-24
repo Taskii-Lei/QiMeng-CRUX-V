@@ -1,0 +1,6 @@
+module traffic_light (
+    input wire clk,          // System clock
+    input wire rst_n,        // Active low reset
+    input wire [1:0] state,  // State input (e.g., 00: Red, 01: Yellow, 10: Green, 11: Yellow)
+    output reg [2:0] led     // LED outputs (e.g., 000: Red, 001: Yellow, 010: Green)
+);

@@ -1,0 +1,9 @@
+module multi_pipe_8bit (
+    input wire clk,          // Clock signal for synchronous operation
+    input wire rst_n,        // Active-low reset signal (0 for reset, 1 for active)
+    input wire mul_en_in,    // Input enable signal for multiplication
+    input wire [7:0] mul_a,  // 8-bit multiplicand
+    input wire [7:0] mul_b,  // 8-bit multiplier
+    output reg mul_en_out,   // Output enable signal indicating multiplication enable
+    output reg [15:0] mul_out // 16-bit product output
+);

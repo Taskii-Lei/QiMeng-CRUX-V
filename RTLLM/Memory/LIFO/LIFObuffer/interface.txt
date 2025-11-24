@@ -1,0 +1,10 @@
+module LIFObuffer (
+    input [3:0] dataIn,  // 4-bit input data to be pushed onto the buffer
+    input RW,            // Read/Write control signal (1 for read, 0 for write)
+    input EN,            // Enable signal to activate buffer operations
+    input Rst,           // Active high reset signal to initialize the buffer
+    input Clk,           // Clock signal for synchronous operations
+    output reg EMPTY,    // Flag indicating whether the buffer is empty
+    output reg FULL,     // Flag indicating whether the buffer is full
+    output reg [3:0] dataOut  // 4-bit output data retrieved from the buffer
+);

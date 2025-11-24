@@ -1,0 +1,11 @@
+
+
+Build a 4-digit BCD (binary-coded decimal) counter with each decimal digit encoded using 4 bits where q[3:0] is the ones digit, q[7:4] is the tens digit, etc., output an enable signal for each of the upper three digits [3:1] indicating when they should be incremented, and include a synchronous active-high reset.
+
+module TopModule (
+  input clk,
+  input reset,
+  output [3:1] ena,
+  output reg [15:0] q
+);
+

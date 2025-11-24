@@ -1,0 +1,11 @@
+module radix2_div (
+    input wire clk,          // Clock signal used for synchronous operation
+    input wire rst,          // Reset signal to initialize or reset the module
+    input wire sign,         // 1-bit indicating if the operation is signed (1) or unsigned (0)
+    input wire [7:0] dividend, // 8-bit input signal representing the dividend for division
+    input wire [7:0] divisor,  // 8-bit input signal representing the divisor for division
+    input wire opn_valid,    // 1-bit indicating that a valid operation request is present
+
+    output reg res_valid,    // 1-bit output signal indicating the result is valid and ready
+    output reg [15:0] result // 16-bit output containing the remainder in the upper 8 bits and the quotient in the lower 8 bits
+);

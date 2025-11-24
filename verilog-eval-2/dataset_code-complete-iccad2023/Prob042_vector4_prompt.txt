@@ -1,0 +1,8 @@
+
+One common place to see a replication operator is when sign-extending a smaller number to a larger one while preserving its signed value, which is done by replicating the sign bit (the most significant bit) of the smaller number to the left; for example, sign-extending 4'b0101 (5) to 8 bits results in 8'b00000101 (5), and sign-extending 4'b1101 (-3) to 8 bits results in 8'b11111101 (-3), so build a circuit that sign-extends an 8-bit number to 32 bits by concatenating 24 copies of the sign bit (i.e., replicate bit[7] 24 times) followed by the 8-bit number itself.
+
+module TopModule (
+  input [7:0] in,
+  output [31:0] out
+);
+

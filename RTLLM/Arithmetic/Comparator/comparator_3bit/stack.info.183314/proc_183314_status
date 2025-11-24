@@ -1,0 +1,48 @@
+Name:	vcs1
+Umask:	0022
+State:	S (sleeping)
+Tgid:	183314
+Ngid:	0
+Pid:	183314
+PPid:	179132
+TracerPid:	0
+Uid:	6155	6155	6155	6155
+Gid:	10000	10000	10000	10000
+FDSize:	256
+Groups:	10000 20002 
+VmPeak:	  293344 kB
+VmSize:	  287092 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   80188 kB
+VmRSS:	   78840 kB
+RssAnon:	   24324 kB
+RssFile:	   54516 kB
+RssShmem:	       0 kB
+VmData:	   28308 kB
+VmStk:	    2084 kB
+VmExe:	  148916 kB
+VmLib:	   19812 kB
+VmPTE:	     536 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	10/6184267
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000010000
+SigIgn:	0000000000000006
+SigCgt:	00000001c00a7ef9
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000001fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff,ffffffff
+Cpus_allowed_list:	0-367
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000f
+Mems_allowed_list:	0-3
+voluntary_ctxt_switches:	470
+nonvoluntary_ctxt_switches:	216

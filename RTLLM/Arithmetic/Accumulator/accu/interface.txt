@@ -1,0 +1,9 @@
+module accu (
+    input wire clk,        // Clock input for synchronization
+    input wire rst_n,      // Active-low reset signal
+    input wire [7:0] data_in, // 8-bit input data for addition
+    input wire valid_in,   // Input signal indicating readiness for new data
+
+    output reg valid_out,  // Output signal indicating when 4 input data accumulation is reached
+    output reg [9:0] data_out // 10-bit output data representing the accumulated sum
+);

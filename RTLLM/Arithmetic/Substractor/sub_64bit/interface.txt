@@ -1,0 +1,6 @@
+module sub_64bit (
+    input  [63:0] A,  // First 64-bit input operand
+    input  [63:0] B,  // Second 64-bit input operand
+    output [63:0] result,  // 64-bit output representing the difference (A - B)
+    output         overflow  // 1-bit output indicating overflow
+);

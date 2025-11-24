@@ -1,0 +1,7 @@
+module calendar (
+    input CLK,          // Clock input
+    input RST,          // Active high reset signal
+    output logic [5:0] Hours,  // 6-bit output representing the current hours
+    output logic [5:0] Mins,   // 6-bit output representing the current minutes
+    output logic [5:0] Secs    // 6-bit output representing the current seconds
+);

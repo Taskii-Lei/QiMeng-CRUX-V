@@ -1,0 +1,4 @@
+module freq_divbyfrac (
+    input wire clk,        // Input clock signal
+    input wire rst_n       // Active low reset signal
+);

@@ -1,0 +1,6 @@
+module pulse_detect (
+    input wire clk,          // Clock signal
+    input wire rst_n,        // Active low reset signal
+    input wire input_signal, // Input signal to detect pulses on
+    output reg pulse_detected // Output signal indicating pulse detection
+);

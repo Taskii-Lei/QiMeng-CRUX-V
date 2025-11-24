@@ -1,0 +1,14 @@
+
+module asyn_fifo(
+	input 					wclk	, 
+	input 					rclk	,   
+	input 					wrstn	,
+	input					rrstn	,
+	input 					winc	,
+	input 			 		rinc	,
+	input 		[7:0]	wdata	,
+
+	output wire				wfull	,
+	output wire				rempty	,
+	output wire [7:0]	rdata
+);

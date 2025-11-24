@@ -1,0 +1,5 @@
+module barrel_shifter (
+    input [7:0] in,  // 8-bit input to be shifted
+    input [2:0] ctrl,  // 3-bit control signal that determines how many positions to shift
+    output reg [7:0] out  // 8-bit shifted output
+);

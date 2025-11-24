@@ -1,0 +1,10 @@
+描述中未出现 res_ready 定义以及其任何功能,但testbench和verified_code 却使用了:
+/nfs_global/S/huanglei/RTLLM/Arithmetic/Divider/radix2_div/design_description.txt:
+    + res_ready: 1-bit input signal indicating that the downstream module is ready to accept the result.
+
+描述中以及interface使用的reset_n,但在testbench中却是rst_n:
+/nfs_global/S/huanglei/RTLLM/Control/Finite State Machine/sequence_detector/design_description.txt
+    + rst_n: Reset signal to initialize the state machine.
+
+/nfs_global/S/huanglei/RTLLM/Arithmetic/Multiplier/multi_pipe_4bit/testbench.v
+    interface 与 testbench 不对应, 修改 testbench:11 : multi_pipe_4bit #(.size(4)) dut ->  multi_pipe_4bit dut

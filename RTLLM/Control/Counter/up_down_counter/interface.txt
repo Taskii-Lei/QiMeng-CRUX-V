@@ -1,0 +1,6 @@
+module up_down_counter (
+    input  wire clk,          // Clock signal (1-bit)
+    input  wire reset,        // Reset signal (1-bit)
+    input  wire up_down,      // Control signal (1-bit)
+    output reg [15:0] count   // 16-bit output representing the current counter value
+);

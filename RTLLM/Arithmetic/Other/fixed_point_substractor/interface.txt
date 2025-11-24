@@ -1,0 +1,10 @@
+module fixed_point_subtractor #(
+    parameter integer Q = 15, 
+    parameter integer N = 32 
+) (
+    // 输入端口
+    input wire [N-1:0] a,
+    input wire [N-1:0] b,
+    // 输出端口
+    output wire [N-1:0] c
+);

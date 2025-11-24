@@ -1,0 +1,110 @@
+0 
+32
++itf+/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libvirsim.so /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/liberrorinf.so /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libsnpsmalloc.so /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/include
+-debug_access+all+bc
+-debug_region+cell
+-gen_obj
+-l
+-picarchive
+-sverilog
+-timescale=1ns/1ns
+/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/bin/vcs1
+compile.log
+testbench.v
+verified_serial2parallel.v
+63
+sysc_uni_pwd=/nfs_global/S/huanglei/RTLLM/Miscellaneous/Others/serial2parallel
+_LMFILES_=/tools/cluster-modulefiles/cluster-tools/v1.0:/tools/cluster-modulefiles/slurm-tools/v1.0:/tools/cluster-modulefiles/cmake/3.21.7:/tools/cluster-modulefiles/python3/3.8.16:/tools/cluster-modulefiles/gcc/4.9.4
+_CE_M=
+_CE_CONDA=
+XML_CATALOG_FILES=file:///nfs_global/S/huanglei/CondaEnv/Baichuan/etc/xml/catalog file:///etc/xml/catalog
+XDG_SESSION_ID=33807
+XDG_RUNTIME_DIR=/run/user/6155
+XDG_DATA_DIRS=/home/S/huanglei/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VMR_MODE_FLAG=32
+VERDI_HOME=/nfs_global/S/huanglei/vcs_software/vcs_local/verdi/verdi/Verdi_O-2018.09-SP2
+VERDI_DIR=/nfs_global/S/huanglei/vcs_software/vcs_local/verdi/verdi/Verdi_O-2018.09-SP2
+VCS_TARGET_ARCH=amd64
+VCS_MX_HOME_INTERNAL=1
+VCS_LOG_FILE=compile.log
+VCS_HOME=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64
+SYNOPSYS_HOME=/eda-tools/eda-software/synopsys/tools/Synopsys2018
+SSH_TTY=/dev/pts/65
+SSH_CONNECTION=10.200.22.23 49232 10.200.244.11 22
+SSH_CLIENT=10.200.22.23 49232 22
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+NPI_PLATFORM=LINUX64_GNU_472
+NOVAS_INST_DIR=/nfs_global/S/huanglei/vcs_software/vcs_local/verdi/verdi/Verdi_O-2018.09-SP2
+NOVAS_HOME=/nfs_global/S/huanglei/vcs_software/vcs_local/verdi/verdi/Verdi_O-2018.09-SP2
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/tools/cluster-modulefiles:/etc/modulefiles
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=cluster-tools/v1.0:slurm-tools/v1.0:cmake/3.21.7:python3/3.8.16:gcc/4.9.4
+LIBRARY_PATH=/tools/cluster-software/gcc/gcc-4.9.4/lib64:/tools/cluster-software/python3/python3-3.8.16/lib:/eda-tools/eda-software/synopsys/tools/Synopsys2018/lib64/:/eda-tools/eda-software/synopsys/tools/Synopsys2018/
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LD_RUN_PATH=/tools/cluster-software/gcc/gcc-4.9.4/lib64:/tools/cluster-software/python3/python3-3.8.16/lib
+LC_ALL=C
+HISTCONTROL=ignoredups
+HF_HOME=/workspace/S/huanglei/.cache
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+GSETTINGS_SCHEMA_DIR=/nfs_global/S/huanglei/CondaEnv/Baichuan/share/glib-2.0/schemas
+FC=gfortran
+F90=gfortran
+F77=gfortran
+DVE_HOME=/nfs_global/S/huanglei/vcs_software/vcs_local/vcs_2018/vcs/O-2018.09-SP2/gui/dve
+CXX=g++
+CPATH=/tools/cluster-software/gcc/gcc-4.9.4/include:/tools/cluster-software/python3/python3-3.8.16/include
+CONDA_SHLVL=2
+CONDA_PYTHON_EXE=/lustre/S/huanglei/miniconda3/bin/python
+CONDA_PROMPT_MODIFIER=(/nfs_global/S/huanglei/CondaEnv/Baichuan) 
+CONDA_PREFIX_1=/lustre/S/huanglei/miniconda3
+CONDA_PREFIX=/nfs_global/S/huanglei/CondaEnv/Baichuan
+CONDA_EXE=/lustre/S/huanglei/miniconda3/bin/conda
+CONDA_DEFAULT_ENV=/nfs_global/S/huanglei/CondaEnv/Baichuan
+CC=gcc
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+0
+3
+1753778946 testbench.v
+1753779465 verified_serial2parallel.v
+1539400757 /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/vcsdp.tab
+4
+1539402341 /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libvirsim.so
+1539401183 /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/liberrorinf.so
+1539401125 /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libsnpsmalloc.so
+1539401175 /eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/libvfs.so
+1753779482 simv.daidir
+-1 partitionlib

@@ -1,0 +1,7 @@
+module float_multi (
+    input wire clk,          // Clock signal for synchronization
+    input wire rst,          // Reset signal (active high)
+    input wire [31:0] a,     // First operand in IEEE 754 format
+    input wire [31:0] b,     // Second operand in IEEE 754 format
+    output reg [31:0] z     // Result of the multiplication in IEEE 754 format
+);

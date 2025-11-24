@@ -1,0 +1,9 @@
+module multi_16bit (
+    input wire clk,          // Chip clock signal
+    input wire rst_n,        // Active-low reset signal
+    input wire start,        // Chip enable signal to initiate the multiplication operation
+    input wire [15:0] ain,    // Input signal representing the multiplicand (a) with a data width of 16 bits
+    input wire [15:0] bin,    // Input signal representing the multiplier (b) with a data width of 16 bits
+    output reg [31:0] yout,  // Product output signal with a data width of 32 bits
+    output reg done          // Chip output flag signal. Defined as 1 indicates the completion of the multiplication operation
+);

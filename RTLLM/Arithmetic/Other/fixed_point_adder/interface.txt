@@ -1,0 +1,5 @@
+module fixed_point_adder (
+    input wire [N-1:0] a,
+    input wire [N-1:0] b,
+    output reg [N-1:0] c
+);

@@ -1,0 +1,133 @@
+
+// -------------------------  Description -------------------------
+ This module takes two input signals, in1 and in2, and produces a single output signal, out. The output signal is the logical AND of in1 and the logical NOT of in2. This means that the output signal will be high (1) only when in1 is high (1) and in2 is low (0). If either in1 or in2 is low (0), the output signal will be low (0). This module is used to perform logical operations on two input signals to produce a single output signal.
+
+// -------------------------  Whole Module -------------------------
+module top_module (
+	input in1,
+	input in2,
+	output logic out
+);
+
+
+	assign out = in1 & ~in2;
+endmodule
+
+
+// -------------------------  Testbench -------------------------
+`timescale 1 ps/1 ps
+`define OK 12
+`define INCORRECT 13
+module reference_module (
+	input in1,
+	input in2,
+	output logic out
+);
+
+	assign out = in1 & ~in2;
+endmodule
+
+
+module stimulus_gen (
+	input clk,
+	output logic in1, in2
+);
+
+	initial begin
+		repeat(100) @(posedge clk, negedge clk) begin
+			{in1, in2} <= $random;
+		end
+		
+		#1 $finish;
+	end
+	
+endmodule
+
+module tb();
+
+	typedef struct packed {
+		int errors;
+		int errortime;
+		int errors_out;
+		int errortime_out;
+
+		int clocks;
+	} stats;
+	
+	stats stats1;
+	
+	
+	wire[511:0] wavedrom_title;
+	wire wavedrom_enable;
+	int wavedrom_hide_after_time;
+	
+	reg clk=0;
+	initial forever
+		#5 clk = ~clk;
+
+	logic in1;
+	logic in2;
+	logic out_ref;
+	logic out_dut;
+
+	initial begin 
+		$dumpfile("wave.vcd");
+		$dumpvars(1, stim1.clk, tb_mismatch ,in1,in2,out_ref,out_dut );
+	end
+
+
+	wire tb_match;		// Verification
+	wire tb_mismatch = ~tb_match;
+	
+	stimulus_gen stim1 (
+		.clk,
+		.* ,
+		.in1,
+		.in2 );
+	reference_module good1 (
+		.in1,
+		.in2,
+		.out(out_ref) );
+		
+	top_module top_module1 (
+		.in1,
+		.in2,
+		.out(out_dut) );
+
+	
+	bit strobe = 0;
+	task wait_for_end_of_timestep;
+		repeat(5) begin
+			strobe <= !strobe;  // Try to delay until the very end of the time step.
+			@(strobe);
+		end
+	endtask	
+
+	
+	final begin
+		if (stats1.errors_out) $display("Hint: Output '%s' has %0d mismatches. First mismatch occurred at time %0d.", "out", stats1.errors_out, stats1.errortime_out);
+		else $display("Hint: Output '%s' has no mismatches.", "out");
+
+		$display("Hint: Total mismatched samples is %1d out of %1d samples\n", stats1.errors, stats1.clocks);
+		$display("Simulation finished at %0d ps", $time);
+		$display("Mismatches: %1d in %1d samples", stats1.errors, stats1.clocks);
+	end
+	
+	// Verification: XORs on the right makes any X in good_vector match anything, but X in dut_vector will only match X.
+	assign tb_match = ( { out_ref } === ( { out_ref } ^ { out_dut } ^ { out_ref } ) );
+	// Use explicit sensitivity list here. @(*) causes NetProc::nex_input() to be called when trying to compute
+	// the sensitivity list of the @(strobe) process, which isn't implemented.
+	always @(posedge clk, negedge clk) begin
+
+		stats1.clocks++;
+		if (!tb_match) begin
+			if (stats1.errors == 0) stats1.errortime = $time;
+			stats1.errors++;
+		end
+		if (out_ref !== ( out_ref ^ out_dut ^ out_ref ))
+		begin if (stats1.errors_out == 0) stats1.errortime_out = $time;
+			stats1.errors_out = stats1.errors_out+1'b1; end
+
+	end
+endmodule
+

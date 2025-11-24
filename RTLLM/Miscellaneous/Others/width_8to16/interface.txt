@@ -1,0 +1,8 @@
+module width_8to16 (
+    input wire clk,       // Clock signal used for synchronous operation
+    input wire rst_n,     // Active-low reset signal. Defined as 0 for reset and 1 for reset signal inactive
+    input wire valid_in,  // Input signal indicating the validity of the input data
+    input wire [7:0] data_in, // 8-bit input data to be converted
+    output reg valid_out, // Output signal indicating the validity of the output data
+    output reg [15:0] data_out // 16-bit output data resulting from the width conversion
+);

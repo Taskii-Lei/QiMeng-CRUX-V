@@ -1,0 +1,7 @@
+module freq_divbyeven (
+    // 输入端口
+    input wire clk,
+    input wire rst_n,
+    // 输出端口
+    output reg clk_div
+);

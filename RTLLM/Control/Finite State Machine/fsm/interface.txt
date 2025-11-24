@@ -1,0 +1,6 @@
+module fsm (
+    input wire IN,       // Input signal to the FSM
+    input wire CLK,      // Clock signal used for synchronous operation
+    input wire RST,      // Reset signal to initialize the FSM
+    output reg MATCH     // Output signal indicating a match condition based on the FSM state
+);

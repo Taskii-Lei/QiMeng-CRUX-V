@@ -1,0 +1,6 @@
+module sequence_detector (
+    input wire clk,          // Clock signal to synchronize the detector
+    input wire rst_n,      // Reset signal to initialize the state machine
+    input wire data_in,      // 1-bit binary input signal to feed the bitstream for sequence detection
+    output reg sequence_detected  // 1-bit output signal that is set high when the specific sequence is detected
+);

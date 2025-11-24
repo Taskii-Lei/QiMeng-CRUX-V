@@ -1,0 +1,8 @@
+module parallel2serial (
+    input wire clk,          // Clock signal used for synchronous operations
+    input wire rst_n,        // Reset signal. Defined as 0 for reset and 1 for reset signal inactive
+    input wire [3:0] d,      // 4-bit parallel data input
+
+    output wire valid_out,  // Valid signal indicating the availability of serial output
+    output reg dout          // Serial output representing the converted data
+);

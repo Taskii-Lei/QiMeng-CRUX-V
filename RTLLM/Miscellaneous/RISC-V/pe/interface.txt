@@ -1,0 +1,7 @@
+module pe (
+    input wire clk,          // Clock signal used for synchronous operations
+    input wire rst,          // Reset signal. 1 for reset, 0 for reset signal inactive
+    input wire [31:0] a,     // 32-bit input operand A
+    input wire [31:0] b,     // 32-bit input operand B
+    output reg [31:0] c     // 32-bit output representing the accumulated result
+);

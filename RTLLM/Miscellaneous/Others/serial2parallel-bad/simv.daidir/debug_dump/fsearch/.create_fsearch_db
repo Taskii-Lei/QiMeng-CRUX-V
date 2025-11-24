@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib:/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/eda-tools/eda-software/synopsys/tools/Synopsys2018/vcs-mx/O-2018.09-1/linux64/bin/vcsfind_create_index.exe  -z  "/nfs_global/S/huanglei/RTLLM/Miscellaneous/Others/serial2parallel/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/nfs_global/S/huanglei/RTLLM/Miscellaneous/Others/serial2parallel/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/nfs_global/S/huanglei/RTLLM/Miscellaneous/Others/serial2parallel/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/nfs_global/S/huanglei/RTLLM/Miscellaneous/Others/serial2parallel/simv.daidir/debug_dump/fsearch/fsearch.db"

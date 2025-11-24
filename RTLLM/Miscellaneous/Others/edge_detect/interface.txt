@@ -1,0 +1,8 @@
+module edge_detect (
+    input wire clk,       // Clock signal
+    input wire rst_n,     // Reset signal (active low)
+    input wire a,         // Input signal
+
+    output reg rise,     // Output signal indicating a rising edge
+    output reg down       // Output signal indicating a falling edge
+);

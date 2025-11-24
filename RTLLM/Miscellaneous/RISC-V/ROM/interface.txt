@@ -1,0 +1,4 @@
+module ROM (
+    input  [7:0] addr,  // 8-bit address input
+    output [7:0] data   // 8-bit data output
+);
